@@ -21,23 +21,11 @@ function getLocation() {
 }
 
 function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  const xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "store.php?lat = " + position.coords.latitude + "&long = " + position.coords.longitude);
+  xhttp.send();
 }
 </script>
 
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>AJ Cardenas</title>
-  <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/24/e3/ce/24e3ce3a5c8dee1b909a6de2c0b4d0e4.jpg">
-</head>
-<body>
-  <h1>Hello World</h1>
 </body>
 </html>
