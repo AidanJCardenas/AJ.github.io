@@ -4,6 +4,39 @@
   <title>AJ Cardenas</title>
   <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/24/e3/ce/24e3ce3a5c8dee1b909a6de2c0b4d0e4.jpg">
 </head>
+<body onload="getLocation()">
+<h1>Hello World!</h1>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJ Cardenas</title>
+  <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/24/e3/ce/24e3ce3a5c8dee1b909a6de2c0b4d0e4.jpg">
+</head>
 <body>
   <h1>Hello World</h1>
 </body>
