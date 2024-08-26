@@ -1,0 +1,24 @@
+/* Add these styles to your existing CSS */
+#auth-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#auth-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#auth-container button {
+    width: 80%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#auth-container button:hover {
+    background-color: #555;
+}
